@@ -33,7 +33,7 @@ public class MainClock {
         c1.adjustTime(serverTime, avg);
         c2.adjustTime(serverTime, avg);
         c3.adjustTime(serverTime, avg);
-        serverTime.plusNanos(avg);
+        serverTime =  serverTime.plusNanos(avg);
 
         System.out.println("updated time"+serverTime);
         } catch (Exception ex) {
